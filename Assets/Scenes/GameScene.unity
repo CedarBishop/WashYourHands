@@ -553,30 +553,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questionsList:
-  - question: 1
+  - question: How long should you wash your hands for?
+    correctAnswer: 20 seconds.
+    wrongAnwser: 5 seconds.
+  - question: What part of your body should you sneeze into?
+    correctAnswer: Your elbow.
+    wrongAnwser: Your hands.
+  - question: Should you wear a mask in puclic if you are sick?
+    correctAnswer: Yes.
+    wrongAnwser: No.
+  - question: Does drinking water help prevent corona virus?
+    correctAnswer: Yes.
+    wrongAnwser: No.
+  - question: Question?
     correctAnswer: Correct
-    wrongAnwser: False
-  - question: 2
+    wrongAnwser: Incorrect
+  - question: Question?
     correctAnswer: Correct
-    wrongAnwser: False
-  - question: 3
+    wrongAnwser: Incorrect
+  - question: Question?
     correctAnswer: Correct
-    wrongAnwser: False
-  - question: 4
+    wrongAnwser: Incorrect
+  - question: Question?
     correctAnswer: Correct
-    wrongAnwser: False
-  - question: 5
-    correctAnswer: Correct
-    wrongAnwser: False
-  - question: 6
-    correctAnswer: Correct
-    wrongAnwser: False
-  - question: 7
-    correctAnswer: Correct
-    wrongAnwser: False
-  - question: 8
-    correctAnswer: Correct
-    wrongAnwser: False
+    wrongAnwser: Incorrect
 --- !u!4 &937141650
 Transform:
   m_ObjectHideFlags: 0
