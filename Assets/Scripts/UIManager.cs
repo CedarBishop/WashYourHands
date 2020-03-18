@@ -22,7 +22,13 @@ public class UIManager : MonoBehaviour
 
     public string[] introDialogue;
     int index = 0;
-    
+
+    private void Start()
+    {
+        GameManager.instance.uIManager = this;
+        Introduction();
+    }
+
     public void Introduction ()
     {
         speechText.text = introDialogue[index];

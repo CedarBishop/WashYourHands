@@ -25,16 +25,33 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        DontDestroyOnLoad(gameObject);
     }
-    void Start()
+
+    void OnEnable()    {
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         score = 0;
         questionCount = 0;
-        uIManager.Introduction();
     }
 
+    void OnDisable()
+    {
 
-    public void RestartGame ()
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    public void LoadGameScene ()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void LoadMainMenu()
     {
         SceneManager.LoadScene(0);
     }

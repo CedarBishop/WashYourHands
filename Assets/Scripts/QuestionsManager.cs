@@ -7,7 +7,7 @@ public class QuestionsManager : MonoBehaviour
     public List<Question> questionsList = new List<Question>();
     void Start()
     {
-        
+        GameManager.instance.questionsManager = this;
     }
 
     public bool LoadQuestion (out Question question)
